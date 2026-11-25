@@ -43,3 +43,16 @@ image formats, and common audio/video formats.
 ```bash
 python -m pytest
 ```
+
+## Browser demo
+
+The `docs/` directory contains a static interactive showcase with sample cards.
+It runs entirely in the browser and does not send files or API keys to a server.
+The demo illustrates the review flow; importing text in the showcase creates an
+example card locally and does not call Gemini.
+
+To publish it, merge the project to the default branch and set **Settings →
+Pages → Build and deployment → Source** to **GitHub Actions**. The included
+workflow deploys on changes to `docs/`. The public URL will be
+`https://regan2327.github.io/study1/` after Pages is enabled and the deployment
+workflow succeeds.
